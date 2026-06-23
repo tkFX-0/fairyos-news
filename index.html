@@ -1,43 +1,45 @@
 <!DOCTYPE html><html lang="ja"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>FairyOS News</title><meta name="theme-color" content="#05070d">
-<meta property="og:title" content="FairyOS News"><meta property="og:description" content="マスターの興味に合わせてFairyが選んだニュース">
+<meta property="og:title" content="FairyOS News"><meta property="og:description" content="Fairyが選んだニュースを3分類で">
 <style>
 :root{--bg:#05070d;--panel:#0e1626;--edge:#1f3a52;--cyan:#2de2ff;--amber:#ffc24b;--txt:#dbe9ff;--muted:#8aa0bd}
 *{box-sizing:border-box}body{margin:0;font-family:system-ui,"Segoe UI",sans-serif;background:
-radial-gradient(1100px 600px at 75% -10%,rgba(45,226,255,.10),transparent 60%),var(--bg);color:var(--txt);line-height:1.6}
-.wrap{max-width:780px;margin:0 auto;padding:30px 18px 70px}
-header{border-bottom:1px solid var(--edge);padding-bottom:16px;margin-bottom:18px}
-h1{font-size:22px;letter-spacing:.2em;margin:0 0 5px;text-shadow:0 0 18px rgba(45,226,255,.45)}
-.sub{color:var(--muted);font-size:12px;letter-spacing:.06em}
-.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:13px}
-.chip{background:var(--panel);border:1px solid var(--edge);border-radius:999px;padding:4px 11px;font-size:12px;color:var(--cyan)}
-.item{background:var(--panel);border:1px solid var(--edge);border-left:3px solid var(--cyan);
-border-radius:12px;padding:14px 16px;margin-bottom:12px}
-.meta{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:6px}
-.src{font:600 10px/1 ui-monospace,Consolas,monospace;letter-spacing:.1em;color:var(--amber);
-border:1px solid rgba(255,194,75,.4);border-radius:6px;padding:3px 7px;text-transform:uppercase}
-.ts{color:#5f7a93;font-size:10.5px;font-variant-numeric:tabular-nums}
-.ttl{color:var(--txt);font-weight:700;font-size:16.5px;margin:2px 0 0;line-height:1.45}
-.sum{color:#c4d6ee;font-size:13.5px;line-height:1.75;margin:9px 0 11px;white-space:pre-wrap}
-.source{color:var(--cyan);text-decoration:none;font-size:12px;border:1px solid var(--edge);
-border-radius:8px;padding:4px 11px;display:inline-block}
+radial-gradient(1100px 600px at 80% -10%,rgba(45,226,255,.10),transparent 60%),var(--bg);color:var(--txt);line-height:1.6}
+.wrap{max-width:680px;margin:0 auto;padding:26px 16px 70px}
+header{border-bottom:1px solid var(--edge);padding-bottom:14px;margin-bottom:14px}
+h1{font-size:20px;letter-spacing:.2em;margin:0 0 5px;text-shadow:0 0 18px rgba(45,226,255,.45)}
+.sub{color:var(--muted);font-size:12px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.chip{background:var(--panel);border:1px solid var(--edge);border-radius:999px;padding:3px 10px;font-size:11.5px;color:var(--cyan)}
+.tier{margin:22px 0 6px}
+.th{display:flex;align-items:center;justify-content:space-between;gap:10px;
+border-left:3px solid var(--tc);padding:2px 0 2px 11px;margin-bottom:6px}
+.tn{font-weight:800;font-size:15px;color:var(--tc);letter-spacing:.04em}
+.tsub{color:var(--muted);font-size:11.5px}
+.cnt{color:var(--tc);font-size:12px;font-weight:700;opacity:.8}
+.feed{position:relative;margin-left:6px;padding-left:18px}
+.feed::before{content:"";position:absolute;left:4px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--tc),transparent)}
+.post{position:relative;padding:9px 0 12px}
+.post .dot{position:absolute;left:-18px;top:14px;width:9px;height:9px;border-radius:50%;
+background:var(--tc);box-shadow:0 0 8px var(--tc)}
+.pb{background:var(--panel);border:1px solid var(--edge);border-radius:12px;padding:11px 13px}
+.meta{display:flex;justify-content:space-between;gap:8px;margin-bottom:4px}
+.src{font:600 9.5px/1 ui-monospace,Consolas,monospace;letter-spacing:.1em;color:var(--amber);
+border:1px solid rgba(255,194,75,.4);border-radius:5px;padding:3px 6px;text-transform:uppercase}
+.ts{color:#5f7a93;font-size:10px;font-variant-numeric:tabular-nums}
+.ttl{margin:2px 0 0;font-size:15.5px;font-weight:700;line-height:1.45}
+.sum{color:#c4d6ee;font-size:13px;line-height:1.7;margin:7px 0 9px;white-space:pre-wrap}
+.source{color:var(--cyan);text-decoration:none;font-size:11.5px;border:1px solid var(--edge);border-radius:8px;padding:3px 10px}
 .source:hover{background:rgba(45,226,255,.08)}
 .empty{color:var(--muted);text-align:center;padding:30px}
-footer{margin-top:26px;color:var(--muted);font-size:11px;text-align:center;letter-spacing:.06em}
+footer{margin-top:26px;color:var(--muted);font-size:11px;text-align:center}
 </style></head><body><div class="wrap">
 <header><h1>FAIRY · NEWS</h1>
-<div class="sub">マスターの興味に合わせて Fairy が選んだニュース &nbsp;·&nbsp; 2026-06-23 12:24 更新 &nbsp;·&nbsp; 8件</div>
+<div class="sub">Fairyが選んだニュースを3分類で &nbsp;·&nbsp; 2026-06-23 12:41 更新 &nbsp;·&nbsp; 8件</div>
 <div class="chips"><span class="chip">AI agent</span><span class="chip">AIエージェント</span><span class="chip">LLM</span><span class="chip">autonomous agent</span><span class="chip">自律エージェント</span><span class="chip">生成AI</span><span class="chip">Claude</span><span class="chip">Anthropic</span></div></header>
-<article class="item"><div class="meta"><span class="src">rss</span><span class="ts">Mon, 22 Jun 2026 14:22:46 +0000</span></div><h2 class="ttl">Claude Codeの「拡張思考」表示は本物の内部推論ではない</h2><p class="sum">Claude Codeが「Extended Thinking」として画面に表示するテキストは、モデルが実際に行っている内部計算を直接反映したものではないと筆者は指摘する。ニューラルネットワークの内部状態は人間が読めるテキストに直接対応しておらず、表示される「思考」もあくまで生成されたトークン列に過ぎない。つまりユーザーが見ているのはモデルの推論過程の実況ではなく、推論過程のように見えるよう訓練された出力である。この記事はHacker Newsで270ポイントを獲得し、AIの「透明性」をめぐる186件のコメント議論を呼んでいる。</p><a class="source" href="https://patrickmccanna.net/the-text-in-claude-codes-extended-thinking-output-is-not-authentic/" target="_blank" rel="noopener">ソース →</a></article>
-<article class="item"><div class="meta"><span class="src">rss</span><span class="ts">Mon, 22 Jun 2026 15:37:48 +0000</span></div><h2 class="ttl">エージェント向けに設計されたGit代替VCS「Oak」が公開</h2><p class="sum">OakはAIエージェントの利用を前提に設計されたバージョン管理システム。仮想マウント機能により、ローカルおよびクラウド上のエージェントはリポジトリの全コピーを取得せずに作業を開始できる。大規模プロジェクトでエージェントが必要とする処理速度とコンテキスト効率の向上を目的としており、oak.spaceで公開されている。</p><a class="source" href="https://oak.space/oak/oak" target="_blank" rel="noopener">ソース →</a></article>
-<article class="item"><div class="meta"><span class="src">rss</span><span class="ts">Mon, 22 Jun 2026 17:00:17 +0000</span></div><h2 class="ttl">Charge Robotics（YCombinator S21）がソフトウェア・ハードウェアエンジニアを募集</h2><p class="sum">Charge RoboticsはYCombinatorの2021年夏季バッチ出身のスタートアップで、現在ソフトウェアおよびハードウェアエンジニアの採用を行っている。同社は太陽光発電所の建設を自動化するロボティクス技術の開発に取り組んでいる。求人詳細はAshby社の採用プラットフォーム経由で公開されており、応募はオンラインで受け付けている。</p><a class="source" href="https://jobs.ashbyhq.com/charge-robotics" target="_blank" rel="noopener">ソース →</a></article>
-<article class="item"><div class="meta"><span class="src">rss</span><span class="ts">Mon, 22 Jun 2026 14:54:59 +0000</span></div><h2 class="ttl">Ponytrailを作った — AIコーディングエージェントの編集をローカルで追跡する監査証跡ツール</h2><p class="sum">AIコーディングエージェントによるファイル編集をローカル環境で記録・追跡するための監査証跡ツール「Ponytrail」を公開した。</p><a class="source" href="https://github.com/0xroylee/ponytrail" target="_blank" rel="noopener">ソース →</a></article>
-<article class="item"><div class="meta"><span class="src">rss</span><span class="ts">Sun, 21 Jun 2026 12:44:13 +0000</span></div><h2 class="ttl">Claudeにおける本人確認の導入</h2><p class="sum">Anthropicが一部のClaudeユーザーに対して本人確認を義務付ける方針を発表した。</p><a class="source" href="https://support.claude.com/en/articles/14328960-identity-verification-on-claude" target="_blank" rel="noopener">ソース →</a></article>
-<article class="item"><div class="meta"><span class="src">rss</span><span class="ts">Sat, 20 Jun 2026 11:19:05 +0000</span></div><h2 class="ttl">AIエージェント向け一時的なCloudflareアカウント</h2><p class="sum">CloudflareブログがAIエージェント用の一時アカウント機能を紹介した記事（231ポイント）。</p><a class="source" href="https://blog.cloudflare.com/temporary-accounts/" target="_blank" rel="noopener">ソース →</a></article>
-<article class="item"><div class="meta"><span class="src">rss</span><span class="ts">Sun, 21 Jun 2026 04:28:39 +0000</span></div><h2 class="ttl">信頼性の高いエージェントAIシステムの構築</h2><p class="sum">LLMを活用したエージェントシステムを本番環境で安定稼働させるための設計原則と実践的アプローチを解説する。</p><a class="source" href="https://martinfowler.com/articles/reliable-llm-bayer.html" target="_blank" rel="noopener">ソース →</a></article>
-<article class="item"><div class="meta"><span class="src">rss</span><span class="ts">Sun, 21 Jun 2026 00:00:25 +0000</span></div><h2 class="ttl">Project Fetch: Phase Two</h2><p class="sum">&lt;p&gt;Article URL: &lt;a href=&quot;https://www.anthropic.com/research/project-fetch-phase-two&quot;&gt;https://www.anthropic.com/research/project-fetch-phase-two&lt;/a&gt;&lt;/p&gt;
+<section class="tier" style="--tc:#2de2ff"><div class="th"><div><div class="tn">興味ど真ん中</div><div class="tsub">あなたの関心に直結</div></div><span class="cnt">6</span></div><div class="feed"><article class="post"><span class="dot"></span><div class="pb"><div class="meta"><span class="src">rss</span><span class="ts">Mon, 22 Jun 2026 15:37:48 +0000</span></div><h3 class="ttl">エージェント向けに設計されたGit代替VCS「Oak」が公開</h3><p class="sum">OakはAIエージェントの利用を前提に設計されたバージョン管理システム。仮想マウント機能により、ローカルおよびクラウド上のエージェントはリポジトリの全コピーを取得せずに作業を開始できる。大規模プロジェクトでエージェントが必要とする処理速度とコンテキスト効率の向上を目的としており、oak.spaceで公開されている。</p><a class="source" href="https://oak.space/oak/oak" target="_blank" rel="noopener">ソース →</a></div></article><article class="post"><span class="dot"></span><div class="pb"><div class="meta"><span class="src">rss</span><span class="ts">Sat, 20 Jun 2026 11:19:05 +0000</span></div><h3 class="ttl">AIエージェント向け一時的なCloudflareアカウント</h3><p class="sum">CloudflareブログがAIエージェント用の一時アカウント機能を紹介した記事（231ポイント）。</p><a class="source" href="https://blog.cloudflare.com/temporary-accounts/" target="_blank" rel="noopener">ソース →</a></div></article><article class="post"><span class="dot"></span><div class="pb"><div class="meta"><span class="src">rss</span><span class="ts">Sun, 21 Jun 2026 12:44:13 +0000</span></div><h3 class="ttl">Claudeにおける本人確認の導入</h3><p class="sum">Anthropicが一部のClaudeユーザーに対して本人確認を義務付ける方針を発表した。</p><a class="source" href="https://support.claude.com/en/articles/14328960-identity-verification-on-claude" target="_blank" rel="noopener">ソース →</a></div></article><article class="post"><span class="dot"></span><div class="pb"><div class="meta"><span class="src">rss</span><span class="ts">Mon, 22 Jun 2026 14:22:46 +0000</span></div><h3 class="ttl">Claude Codeの「拡張思考」表示は本物の内部推論ではない</h3><p class="sum">Claude Codeが「Extended Thinking」として画面に表示するテキストは、モデルが実際に行っている内部計算を直接反映したものではないと筆者は指摘する。ニューラルネットワークの内部状態は人間が読めるテキストに直接対応しておらず、表示される「思考」もあくまで生成されたトークン列に過ぎない。つまりユーザーが見ているのはモデルの推論過程の実況ではなく、推論過程のように見えるよう訓練された出力である。この記事はHacker Newsで270ポイントを獲得し、AIの「透明性」をめぐる186件のコメント議論を呼んでいる。</p><a class="source" href="https://patrickmccanna.net/the-text-in-claude-codes-extended-thinking-output-is-not-authentic/" target="_blank" rel="noopener">ソース →</a></div></article><article class="post"><span class="dot"></span><div class="pb"><div class="meta"><span class="src">rss</span><span class="ts">Mon, 22 Jun 2026 14:54:59 +0000</span></div><h3 class="ttl">Ponytrailを作った — AIコーディングエージェントの編集をローカルで追跡する監査証跡ツール</h3><p class="sum">AIコーディングエージェントによるファイル編集をローカル環境で記録・追跡するための監査証跡ツール「Ponytrail」を公開した。</p><a class="source" href="https://github.com/0xroylee/ponytrail" target="_blank" rel="noopener">ソース →</a></div></article><article class="post"><span class="dot"></span><div class="pb"><div class="meta"><span class="src">rss</span><span class="ts">Sun, 21 Jun 2026 04:28:39 +0000</span></div><h3 class="ttl">信頼性の高いエージェントAIシステムの構築</h3><p class="sum">LLMを活用したエージェントシステムを本番環境で安定稼働させるための設計原則と実践的アプローチを解説する。</p><a class="source" href="https://martinfowler.com/articles/reliable-llm-bayer.html" target="_blank" rel="noopener">ソース →</a></div></article></div></section><section class="tier" style="--tc:#9b8cff"><div class="th"><div><div class="tn">気になった?</div><div class="tsub">興味は薄いけど、ちょっと寄り道</div></div><span class="cnt">2</span></div><div class="feed"><article class="post"><span class="dot"></span><div class="pb"><div class="meta"><span class="src">rss</span><span class="ts">Sun, 21 Jun 2026 00:00:25 +0000</span></div><h3 class="ttl">Project Fetch: Phase Two</h3><p class="sum">&lt;p&gt;Article URL: &lt;a href=&quot;https://www.anthropic.com/research/project-fetch-phase-two&quot;&gt;https://www.anthropic.com/research/project-fetch-phase-two&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Comments URL: &lt;a href=&quot;https://news.ycombinator.com/item?id=48614311&quot;&gt;https://news.ycombinator.com/item?id=48614311&lt;/a&gt;&lt;/p&gt;
-&lt;</p><a class="source" href="https://www.anthropic.com/research/project-fetch-phase-two" target="_blank" rel="noopener">ソース →</a></article>
-<footer>FairyOS — 興味度から自動キュレーション</footer>
+&lt;</p><a class="source" href="https://www.anthropic.com/research/project-fetch-phase-two" target="_blank" rel="noopener">ソース →</a></div></article><article class="post"><span class="dot"></span><div class="pb"><div class="meta"><span class="src">rss</span><span class="ts">Mon, 22 Jun 2026 17:00:17 +0000</span></div><h3 class="ttl">Charge Robotics（YCombinator S21）がソフトウェア・ハードウェアエンジニアを募集</h3><p class="sum">Charge RoboticsはYCombinatorの2021年夏季バッチ出身のスタートアップで、現在ソフトウェアおよびハードウェアエンジニアの採用を行っている。同社は太陽光発電所の建設を自動化するロボティクス技術の開発に取り組んでいる。求人詳細はAshby社の採用プラットフォーム経由で公開されており、応募はオンラインで受け付けている。</p><a class="source" href="https://jobs.ashbyhq.com/charge-robotics" target="_blank" rel="noopener">ソース →</a></div></article></div></section>
+<footer>FairyOS — 興味度から自動キュレーション（タイムライン）</footer>
 </div></body></html>
